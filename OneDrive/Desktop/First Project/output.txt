@@ -1,0 +1,43 @@
+GitHub Repository: https://github.com/himanshusar123/code-evaluator
+
+Files in this repository:
+=========================
+
+1. rag_agent_system.py - Full RAG + Agent system (complex version)
+   - Document preprocessing with semantic chunking
+   - TF-IDF based embedding and vector store
+   - Tool registry with student status, deadlines, refund tools
+   - Router agent with intent classification
+
+2. rag_system_simple.py - Simplified RAG system (human-like)
+   - Simple step-by-step flow
+   - Load documents → Chunk → Build vocabulary → Create embeddings
+   - Simple search using cosine similarity
+   - Intent classification for routing
+   - Tool system for external data
+
+3. code_evaluator_simple.py - GitHub code evaluator
+   - Downloads repository and analyzes code files
+   - Awards marks based on: comments, functions, error handling, naming, indentation
+   - Displays file-wise and overall grades (A+ to D)
+
+How to use:
+===========
+
+1. For RAG System (Simple):
+   python rag_system_simple.py
+
+2. For Code Evaluator:
+   python code_evaluator_simple.py
+   Then enter a GitHub URL like: https://github.com/username/repository
+
+Project Structure:
+==================
+code-evaluator/
+├── rag_agent_system.py      # Complex version
+├── rag_system_simple.py     # Simple version (recommended)
+├── code_evaluator_simple.py # Code grading tool
+└── README.md                # This file
+
+Created: 2024
+Author: Himanshu Sardana
